@@ -14,6 +14,7 @@ const Header: VFC = () => {
     background-color: #ffffffdf;
     backdrop-filter: blur(10px);
     border-bottom: 1px solid #000000;
+    z-index: 1000;
   `
   const StyledLogoText = styled(Typography)``
   return (
