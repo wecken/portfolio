@@ -25,7 +25,9 @@ const IntroduceWorkArticle: VFC<Props> = ({
 
   return (
     <Grid>
-      <CoverImage />
+      <Grid container direction={"column"} alignItems={"center"}>
+        <CoverImage />
+      </Grid>
       <Box display="flex">
         <Grid
           container
@@ -38,10 +40,10 @@ const IntroduceWorkArticle: VFC<Props> = ({
           p={4}
         >
           <Grid item xs={12} sm={6} md={6}>
+            <StyledTypography variant="subtitle1">{title}</StyledTypography>
             {subTitle && (
-              <StyledTypography variant="h4">{subTitle}</StyledTypography>
+              <StyledTypography variant="h1">{subTitle}</StyledTypography>
             )}
-            <StyledTypography variant="subtitle1">{}</StyledTypography>
             {children}
           </Grid>
         </Grid>

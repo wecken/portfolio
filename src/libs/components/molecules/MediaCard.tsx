@@ -16,9 +16,15 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
   const StyledCard = styled(Card)`
     background-color: "white";
   `
-
+  const StyledButtonBase = styled(ButtonBase)`
+    max-width: 100%;
+  `
   const StyledTypography = styled(Typography)`
     text-align: left;
+  `
+
+  const TextConteiner = styled(Grid)`
+    max-width: 100%;
   `
 
   const styles = {
@@ -39,9 +45,9 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
   }
 
   return (
-    <ButtonBase onClick={onClickCard}>
+    <StyledButtonBase onClick={onClickCard}>
       <StyledCard>
-        <Grid container alignItems="center">
+        <TextConteiner container alignItems="center">
           <CoverImage />
           <Grid style={styles.textContainer} gap={2}>
             <Box
@@ -49,19 +55,29 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
               justifyContent="flex-start"
               flexDirection="column"
             >
-              <StyledTypography variant="h4">{title}</StyledTypography>
+              <Box mb={1}>
+                <StyledTypography variant="h2">{title}</StyledTypography>
+              </Box>
               {subtitle && (
-                <StyledTypography variant="subtitle2">2021</StyledTypography>
+                <StyledTypography variant="subtitle2">
+                  {subtitle}
+                </StyledTypography>
               )}
-              <StyledTypography variant="body2">{body}</StyledTypography>
-              <Typography variant="button" style={{ alignSelf: "flex-end" }}>
-                <StyledTypography>Detail</StyledTypography>
-              </Typography>
+              <StyledTypography color={"gray"} variant="body2">
+                {body}
+              </StyledTypography>
+              <StyledTypography
+                variant="button"
+                color={"primary"}
+                style={{ alignSelf: "flex-end" }}
+              >
+                Detail
+              </StyledTypography>
             </Box>
           </Grid>
-        </Grid>
+        </TextConteiner>
       </StyledCard>
-    </ButtonBase>
+    </StyledButtonBase>
   )
 }
 

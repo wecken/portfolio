@@ -1,6 +1,8 @@
 import React, { VFC } from "react"
-import { Typography } from "@mui/material"
+import { ButtonBase, Typography } from "@mui/material"
 import styled from "@emotion/styled"
+import { useNavigate } from "react-router-dom"
+import { useTheme } from "@mui/system"
 
 const Header: VFC = () => {
   const StyledNav = styled.nav`
@@ -16,10 +18,22 @@ const Header: VFC = () => {
     border-bottom: 1px solid #000000;
     z-index: 1000;
   `
-  const StyledLogoText = styled(Typography)``
+  const StyledLogoButton = styled(ButtonBase)`
+    margin: 16;
+  `
+  const StyledLogoText = styled(Typography)`
+    margin: 16;
+  `
+  const navigate = useNavigate()
+  const onClickLogo = () => {
+    navigate("/")
+  }
+
   return (
     <StyledNav>
-      <StyledLogoText>Wecken</StyledLogoText>
+      <StyledLogoButton onClick={onClickLogo}>
+        <StyledLogoText variant="body2">Wecken</StyledLogoText>
+      </StyledLogoButton>
     </StyledNav>
   )
 }

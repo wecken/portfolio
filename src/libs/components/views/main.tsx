@@ -1,7 +1,7 @@
 import React from "react"
 import MBUX from "assets/images/MBUX.jpg"
 import EOW from "assets/images/EOW_Animation.gif"
-import kurashiruStore from "assets/images/kurashiru_store_ui.png"
+import kurashiruStore from "assets/images/kurashiru_store_banner.jpg"
 import { Box, Grid, Typography } from "@mui/material"
 import MediaCard from "libs/components/molecules/MediaCard"
 
@@ -22,24 +22,28 @@ function Main(): React.ReactElement {
           <Grid item xs={12} sm={3} md={3}>
             <MediaCard
               imageSrc={kurashiruStore}
+              subtitle="2020"
               title="kurashiru store"
               body="Online select shop for quality food and sweets in the biggest recipe video app in Japan 'kurashiru' (service ended in 2020)"
-              to="kurashiru_store"
+              to="/works/kurashiru_store"
             />
           </Grid>
           <Grid item xs={12} sm={3} md={3}>
             <MediaCard
               imageSrc={MBUX}
+              subtitle="2019"
               title="MBUX - Mercedes-Benz User Experience"
               body="Futuristic and luxrious information system, designed to give the best user expericne in a car."
-              to="/mbux"
+              to="/works/mbux"
             />
           </Grid>
           <Grid item xs={12} sm={3} md={3}>
             <MediaCard
               imageSrc={EOW}
               title="Eijiro on the WEB"
+              subtitle="2016"
               body="One of the most popular Japanese-English online dictionary in Japan."
+              to="/works/EOW"
             />
           </Grid>
         </Grid>
