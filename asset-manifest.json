@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/portfolio/static/js/main.80ade444.js",
+    "main.js": "/portfolio/static/js/main.cd4bfe2f.js",
     "static/js/787.41186040.chunk.js": "/portfolio/static/js/787.41186040.chunk.js",
     "static/media/EOW_Animation.gif": "/portfolio/static/media/EOW_Animation.c4103f9cf96c108d3f88.gif",
     "static/media/kurashiru_store_ui.png": "/portfolio/static/media/kurashiru_store_ui.6120f211a923d6394e54.png",
@@ -13,11 +13,11 @@
     "static/media/kurashiru_store_flow.png": "/portfolio/static/media/kurashiru_store_flow.0c5d80e0f71df7404777.png",
     "index.html": "/portfolio/index.html",
     "main.e6c13ad2.css.map": "/portfolio/static/css/main.e6c13ad2.css.map",
-    "main.80ade444.js.map": "/portfolio/static/js/main.80ade444.js.map",
+    "main.cd4bfe2f.js.map": "/portfolio/static/js/main.cd4bfe2f.js.map",
     "787.41186040.chunk.js.map": "/portfolio/static/js/787.41186040.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.80ade444.js"
+    "static/js/main.cd4bfe2f.js"
   ]
 }
