@@ -7,8 +7,10 @@ import creative from "../../../assets/images/kurashiru_store_creative.png"
 import flow from "../../../assets/images/kurashiru_store_flow.png"
 import spec from "../../../assets/images/kurashiru_store_spec.png"
 import styled from "@emotion/styled"
+import { useTranslation } from "react-i18next"
 
 function KurashiruStore(): React.ReactElement {
+  const { t } = useTranslation()
   const articleImage = (imageSrc: string, alt: string) => {
     return <img src={imageSrc} alt={alt} style={{ maxWidth: "100%" }} />
   }
@@ -18,78 +20,58 @@ function KurashiruStore(): React.ReactElement {
   return (
     <IntroduceWorkArticle
       title="kurashiru store (2020)"
-      subTitle="In-app select shop for quality food and sweets"
+      subTitle={t("short_descripton_kurashiru_store_01")}
       imageSrc={KurashiruStoreImage}
     >
       <StyledParagraph variant="body1">
-        Kurashiru was one of the most successfull recipe app already at that
-        time in Japan. However, the company was not completely happy with the
-        success, and wanted to enter the bigger market; e-commerce. That's how
-        the project 'kurashiru store' started.
+        {t("short_descripton_kurashiru_store_02")}
       </StyledParagraph>
       <Box mt={4}>
-        <Typography variant="h3">Role</Typography>
+        <Typography variant="h3">{t("Role")}</Typography>
       </Box>
-      <StyledParagraph variant="body1">UI/UX Designer</StyledParagraph>
-      <StyledParagraph variant="body1">Front-end engineer</StyledParagraph>
+      <StyledParagraph variant="body1">{t("UI/UX Designer")}</StyledParagraph>
+      <StyledParagraph variant="body1">
+        {t("Front-end engineer")}
+      </StyledParagraph>
       <Box mt={4}>
-        <Typography variant="h3">Tools</Typography>
+        <Typography variant="h3">{t("Tools")}</Typography>
       </Box>
       <StyledParagraph variant="body1">
         Figma, Visual Studio Code, SourceTree
       </StyledParagraph>
       <Box mt={4}>
-        <Typography variant="h3">Skills</Typography>
+        <Typography variant="h3">{t("Skills")}</Typography>
       </Box>
       <StyledParagraph variant="body1">
-        UI/UX Design, Graphic Design, Front-end engineering (ERB, vue.js,
-        HTML/CSS), Git (GitHub)
+        {t("UI/UX Design")}, {t("Graphic Design")}, {t("Front-end engineering")}{" "}
+        (ERB, vue.js, HTML/CSS), Git (GitHub)
       </StyledParagraph>
       <Box mt={4}>
-        <Typography variant="h3">Challenges</Typography>
+        <Typography variant="h3">{t("Challenges")}</Typography>
       </Box>
       <StyledParagraph variant="body1">
-        Since I've never designed for E-commerce app, I did a lot of researches
-        on major EC web sites, and apps such as Amazon, Rakuten, Mercari, etc.
-        Not only the EC apps, but I also researched design of popular sweets
-        brands' web sites such as BAKE, Mr. Cheesecake, etc because our main
-        product lineups were sweets.
+        {t("kurashiru_store_article_paragraph_01")}
       </StyledParagraph>
       <StyledParagraph variant="body1">
-        This project was also where I learned designing banners, or other
-        creative works. As EC service, the UI that just works is not enough, but
-        we needed to sell products. Therefore, various methods for communicating
-        with customers were needed. I created many banners in different sizes
-        and forms to attract customers, and make our products look great.
+        {t("kurashiru_store_article_paragraph_02")}
       </StyledParagraph>
       {articleImage(
         creative,
         "Example of my creative works (static landing page)"
       )}
       <Box my={4}>
-        <Typography variant="h3">Design</Typography>
+        <Typography variant="h3">{t("Design")}</Typography>
       </Box>
       {articleImage(
         spec,
         "part of the design specification of kurashiru store"
       )}
       <StyledParagraph variant="body1">
-        I started with designing the product description page first because we
-        offered very few number of items in the beginning, which made the
-        collection page or category page not so important.
+        {t("kurashiru_store_article_paragraph_03")}
       </StyledParagraph>
       {articleImage(flow, "Sign up flow.")}
       <StyledParagraph variant="body1">
-        I also designed sign up flow very carefully because it's where the most
-        of customers drop out, and end up without getting to conversion. One of
-        the most important feature was that customer could actually put the item
-        in the cart without having an account. This strategy was very successful
-        because (I assume) once the customer puts itmes into the cart, creating
-        account and entering forms seem to be very natural. If we asked creating
-        account before customer start interacting with our services, many of
-        them would have dropped out earlier. To achieve this, the logic behind
-        the scene is pretty complex as you can see the image above. However,
-        from customer point of view, the design was very clean and simple.
+        {t("kurashiru_store_article_paragraph_04")}
       </StyledParagraph>
     </IntroduceWorkArticle>
   )

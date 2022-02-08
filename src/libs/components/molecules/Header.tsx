@@ -15,7 +15,7 @@ const Header: VFC = () => {
     top: 0;
     background-color: #ffffffdf;
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #f0f0f0;
     z-index: 1000;
   `
   const StyledLogoButton = styled(ButtonBase)`
@@ -32,7 +32,7 @@ const Header: VFC = () => {
   return (
     <StyledNav>
       <StyledLogoButton onClick={onClickLogo}>
-        <StyledLogoText variant="body2">Wecken</StyledLogoText>
+        <StyledLogoText variant="body1">Wecken</StyledLogoText>
       </StyledLogoButton>
     </StyledNav>
   )

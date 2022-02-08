@@ -4,13 +4,15 @@ import EOW from "assets/images/EOW_Animation.gif"
 import kurashiruStore from "assets/images/kurashiru_store_banner.jpg"
 import { Box, Grid, Typography } from "@mui/material"
 import MediaCard from "libs/components/molecules/MediaCard"
+import { useTranslation } from "react-i18next"
 
 function Main(): React.ReactElement {
+  const { t } = useTranslation()
   return (
     <Box m={2}>
       <Grid container alignItems="center" direction="column">
         <Box mb={2} style={{ width: "100%" }}>
-          <Typography variant="h2">Wecken's Works</Typography>
+          <Typography variant="h2">{t("Wecken's Works")}</Typography>
         </Box>
         <Grid
           container
@@ -24,7 +26,7 @@ function Main(): React.ReactElement {
               imageSrc={kurashiruStore}
               subtitle="2020"
               title="kurashiru store"
-              body="Online select shop for quality food and sweets in the biggest recipe video app in Japan 'kurashiru' (service ended in 2020)"
+              body={t("card_description_kurashiru_store_01")}
               to="/works/kurashiru_store"
             />
           </Grid>
@@ -33,16 +35,17 @@ function Main(): React.ReactElement {
               imageSrc={MBUX}
               subtitle="2019"
               title="MBUX - Mercedes-Benz User Experience"
-              body="Futuristic and luxrious information system, designed to give the best user expericne in a car."
+              body={t("card_description_MBUX_01")}
               to="/works/mbux"
             />
           </Grid>
           <Grid item xs={12} sm={3} md={3}>
             <MediaCard
               imageSrc={EOW}
-              title="Eijiro on the WEB"
+              title={t("Eijiro on the WEB")}
               subtitle="2016"
-              body="One of the most popular Japanese-English online dictionary in Japan."
+              // body="One of the most popular Japanese-English online dictionary in Japan."
+              body={t("card_description_EOW_01")}
               to="/works/EOW"
             />
           </Grid>

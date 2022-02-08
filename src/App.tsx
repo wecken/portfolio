@@ -7,6 +7,28 @@ import KurashiruStore from "libs/components/views/kurashiruStore"
 import EOW from "libs/components/views/eow"
 import { ThemeProvider } from "@mui/material"
 import theme from "libs/theme/theme"
+import i18n from "i18next"
+import detector from "i18next-browser-languagedetector"
+import { initReactI18next } from "react-i18next"
+import { JA_JP, EN_US } from "libs/translations"
+const resources = {
+  ja: JA_JP,
+  en: EN_US,
+}
+
+// const initialLang: SupportedLanguage = "ja"
+
+i18n
+  .use(initReactI18next)
+  .use(detector)
+  .init({
+    resources,
+    // lng: initialLang,
+    fallbackLng: "en",
+    interpolation: {
+      escapeValue: false,
+    },
+  })
 
 function App() {
   return (

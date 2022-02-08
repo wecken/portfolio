@@ -3,6 +3,7 @@ import { ButtonBase, Card, Grid, Typography } from "@mui/material"
 import styled from "@emotion/styled"
 import { useNavigate } from "react-router-dom"
 import { Box } from "@mui/system"
+import { useTranslation } from "react-i18next"
 
 interface Props {
   title: string
@@ -31,6 +32,7 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
     card: {},
     textContainer: {
       padding: "16px",
+      width: "100%",
     },
   }
 
@@ -43,6 +45,7 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
       ? navigate(to)
       : alert("Wecken hasn't published the content yet. Please wait.")
   }
+  const { t } = useTranslation()
 
   return (
     <StyledButtonBase onClick={onClickCard}>
@@ -54,6 +57,7 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
               display="flex"
               justifyContent="flex-start"
               flexDirection="column"
+              width={"100%"}
             >
               <Box mb={1}>
                 <StyledTypography variant="h2">{title}</StyledTypography>
@@ -69,9 +73,9 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
               <StyledTypography
                 variant="button"
                 color={"primary"}
-                style={{ alignSelf: "flex-end" }}
+                style={{ alignSelf: "flex-end", textTransform: "capitalize" }}
               >
-                Detail
+                {t("Detail")}
               </StyledTypography>
             </Box>
           </Grid>
