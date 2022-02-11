@@ -1,5 +1,4 @@
 import { createTheme } from "@mui/material/styles"
-import { PaletteColorOptions } from "@mui/material/styles"
 
 // フォントを設定
 const fontFamily = [

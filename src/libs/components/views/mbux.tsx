@@ -14,6 +14,19 @@ function Mbux(): React.ReactElement {
   const StyledParagraph = styled(Typography)`
     margin: 16px 0;
   `
+  const YoutubeContainer = styled.div`
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  `
+  const StyledIframe = styled(Iframe)`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  `
   const articleImage = (imageSrc: string, alt: string) => {
     return <img src={imageSrc} alt={alt} style={{ maxWidth: "100%" }} />
   }
@@ -65,16 +78,16 @@ function Mbux(): React.ReactElement {
       <StyledParagraph variant="body1">
         {t("mbux_article_paragraph_06")}
       </StyledParagraph>
-      <Iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/NRtTMp1cjOo?start=590"
-        url="https://www.youtube.com/embed/NRtTMp1cjOo?start=590"
-        title="YouTube video player"
-        // frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen={true}
-      ></Iframe>
+      <YoutubeContainer>
+        <StyledIframe
+          src="https://www.youtube.com/embed/NRtTMp1cjOo?start=590"
+          url="https://www.youtube.com/embed/NRtTMp1cjOo?start=590"
+          title="YouTube video player"
+          // frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen={true}
+        ></StyledIframe>
+      </YoutubeContainer>
     </IntroduceWorkArticle>
   )
 }

@@ -5,13 +5,13 @@ import Main from "libs/components/views/main"
 import Mbux from "libs/components/views/mbux"
 import KurashiruStore from "libs/components/views/kurashiruStore"
 import EOW from "libs/components/views/eow"
-import theme from "libs/theme/theme"
 import i18n from "i18next"
 import detector from "i18next-browser-languagedetector"
 import { initReactI18next } from "react-i18next"
 import { JA_JP, EN_US } from "libs/translations"
 import { ThemeProvider } from "libs/theme/ThemeProvider"
 import styled from "@emotion/styled"
+import About from "libs/components/views/about"
 const resources = {
   ja: JA_JP,
   en: EN_US,
@@ -44,7 +44,8 @@ function App() {
         <Root>
           <Header />
           <Routes>
-            <Route path="/" element={<Main />} />
+            <Route path="/" element={<About />} />
+            <Route path="/works" element={<Main />} />
             <Route path="/works/mbux" element={<Mbux />} />
             <Route path="/works/kurashiru_store" element={<KurashiruStore />} />
             <Route path="/works/EOW" element={<EOW />} />

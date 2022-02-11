@@ -1,5 +1,4 @@
 import { ThemeProvider as MuiThemeProvider } from "@mui/material/styles"
-import { createTheme } from "@mui/material/styles"
 import { ThemeProvider as StyledThemeProvider } from "@emotion/react"
 import { FC } from "react"
 import theme from "./theme"
