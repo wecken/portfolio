@@ -27,9 +27,20 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
   const TextConteiner = styled(Grid)`
     max-width: 100%;
   `
+  const StyledDetailButton = styled(Typography)`
+    margin-top: 8px;
+    color: ${(props) => props.theme.palette.wecken.primary.solid};
+  `
+  const BodyTypography = styled(Typography)`
+    color: ${(props) => props.theme.palette.wecken.black.medium};
+    text-align: left;
+  `
+  const Subtitle = styled(Typography)`
+    color: ${(props) => props.theme.palette.wecken.black.high};
+    text-align: left;
+  `
 
   const styles = {
-    card: {},
     textContainer: {
       padding: "16px",
       width: "100%",
@@ -62,21 +73,14 @@ const MediaCard: VFC<Props> = ({ title, subtitle, body, imageSrc, to }) => {
               <Box mb={1}>
                 <StyledTypography variant="h2">{title}</StyledTypography>
               </Box>
-              {subtitle && (
-                <StyledTypography variant="subtitle2">
-                  {subtitle}
-                </StyledTypography>
-              )}
-              <StyledTypography color={"gray"} variant="body2">
-                {body}
-              </StyledTypography>
-              <StyledTypography
+              {subtitle && <Subtitle variant="subtitle2">{subtitle}</Subtitle>}
+              <BodyTypography variant="body2">{body}</BodyTypography>
+              <StyledDetailButton
                 variant="button"
-                color={"primary"}
                 style={{ alignSelf: "flex-end", textTransform: "capitalize" }}
               >
                 {t("Detail")}
-              </StyledTypography>
+              </StyledDetailButton>
             </Box>
           </Grid>
         </TextConteiner>

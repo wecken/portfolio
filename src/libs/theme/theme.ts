@@ -1,4 +1,5 @@
-import { createTheme } from "@mui/material"
+import { createTheme } from "@mui/material/styles"
+import { PaletteColorOptions } from "@mui/material/styles"
 
 // フォントを設定
 const fontFamily = [
@@ -11,7 +12,7 @@ const fontFamily = [
   "sans-serif",
 ].join(",")
 
-const theme = createTheme({
+export const theme = createTheme({
   typography: {
     fontFamily: fontFamily, // フォント
     h1: {
@@ -59,6 +60,17 @@ const theme = createTheme({
       main: "#00e676",
       dark: "#00a152",
       contrastText: "#ffffff",
+    },
+    wecken: {
+      primary: {
+        solid: "#347EED",
+      },
+      black: {
+        high: "#4F4F4F",
+        medium: "#828282",
+        20: "#E0E0E0",
+        10: "#F2F2F2",
+      },
     },
   },
   mixins: {

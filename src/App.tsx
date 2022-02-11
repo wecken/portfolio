@@ -5,12 +5,13 @@ import Main from "libs/components/views/main"
 import Mbux from "libs/components/views/mbux"
 import KurashiruStore from "libs/components/views/kurashiruStore"
 import EOW from "libs/components/views/eow"
-import { ThemeProvider } from "@mui/material"
 import theme from "libs/theme/theme"
 import i18n from "i18next"
 import detector from "i18next-browser-languagedetector"
 import { initReactI18next } from "react-i18next"
 import { JA_JP, EN_US } from "libs/translations"
+import { ThemeProvider } from "libs/theme/ThemeProvider"
+import styled from "@emotion/styled"
 const resources = {
   ja: JA_JP,
   en: EN_US,
@@ -30,17 +31,25 @@ i18n
     },
   })
 
+const Root = styled.div`
+  background-color: ${(props) => props.theme.palette.wecken.black[10]};
+  min-height: 100vh;
+  color: ${(props) => props.theme.palette.wecken.black.high};
+`
+
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/works/mbux" element={<Mbux />} />
-          <Route path="/works/kurashiru_store" element={<KurashiruStore />} />
-          <Route path="/works/EOW" element={<EOW />} />
-        </Routes>
+      <ThemeProvider>
+        <Root>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/works/mbux" element={<Mbux />} />
+            <Route path="/works/kurashiru_store" element={<KurashiruStore />} />
+            <Route path="/works/EOW" element={<EOW />} />
+          </Routes>
+        </Root>
       </ThemeProvider>
     </>
   )
