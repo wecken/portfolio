@@ -59,5 +59,26 @@ export const EN_US = {
       "Before I redesigned it, there were too many screen transitions making the app feel like inneficient to use. Because the app is famous for the amount of example sentenses, I wanted the app to be more efficient when user is searching for a best suitable result from many of those.",
     eow_article_pargraph_02:
       "I wanted to have a fluent animation to realize efficient interaction between master and detail views. Because of animated transition, user won't feel getting lost after each interaction.",
+    "Wecken is a Japan-based UI/UX designer, good at mobile app UI design with a good understanding of front end engineering. This web site is designed and coded by Wecken":
+      "Wecken is a Japan-based UI/UX designer, good at mobile app UI design with a good understanding of front end engineering. This web site is designed and coded by Wecken",
+    "About Wecken": "About Wecken",
+    "Wecken is currently working for a company that is offering consumer mobile app, and is also working on several UI design projects on the side project.":
+      "Wecken is currently working for a company that is offering consumer mobile app, and is also working on several UI design projects on the side project.",
+    "Please contact me if you need help with the following types of design work.":
+      "Please contact me if you need help with the following types of design work.",
+    "- Consulting UI design (for consumer and for business":
+      "- Consulting UI design (for consumer and for business",
+    "- UI design mock-up creation using Figma":
+      "- UI design mock-up creation using Figma",
+    "- Interpreting / Translating business English, especially IT domain":
+      "- Interpreting / Translating business English, especially IT domain",
+    "- Consulting / Designing usability research":
+      "- Consulting / Designing usability research",
+    "- Consulting UI Design workshop, and holding online seminars":
+      "- Consulting UI Design workshop, and holding online seminars",
+    Blogs: "Blogs",
+    Contacts: "Contacts",
+    "I'm writing about UI design and front-end engineering":
+      "I'm writing about UI design and front-end engineering",
   },
 }

@@ -3,6 +3,7 @@ export const JA_JP = {
     lang_ja: "Japanese",
     lang_en: "English",
     "Wecken's Works": "過去の制作",
+    Works: "制作",
     card_description_kurashiru_store_01:
       "日本最大級のレシピ動画アプリ「kurashiru」で上質な料理やスイーツを楽しめるオンラインセレクトショップ（2020年サービス終了）",
     short_descripton_kurashiru_store_01:
@@ -58,5 +59,28 @@ export const JA_JP = {
       "リニューアル前は、画面遷移が多すぎて使い勝手が悪いと感じていました。例文の多さで有名なアプリなので、たくさんの例文の中から最適なものを探すときに効率的に使えるようにしたいと思いました。",
     eow_article_pargraph_02:
       "一覧と詳細表示の効率的なインタラクションを実現するために、滑らかなアニメーションを実現したいと思いました。アニメーションで遷移することで、ユーザーは各インタラクションの後に迷うことがなくなるのです",
+    "Wecken is a Japan-based UI/UX designer, good at mobile app UI design with a good understanding of front end engineering. This web site is designed and coded by Wecken":
+      "Weckenは日本在住のUI/UXデザイナーです。モバイルアプリのUIデザインを得意とし、フロントエンド開発についても知識があります。このウェブサイトはWeckenによってデザイン、コーディングされています。",
+    "About Wecken": "Weckenについて",
+    "Wecken is currently working for a company that is offering consumer mobile app, and is also working on several UI design projects on the side project.":
+      "Weckenは現在、消費者向けモバイルアプリを提供している会社に勤務しており、サイドプロジェクトとしていくつかのUIデザインプロジェクトにも携わっています。",
+    "Please contact me if you need help with the following types of design work.":
+      "以下のようなデザイン業務でお困りの方は、ぜひご連絡ください。",
+    "- Consulting UI design (for consumer and for business)":
+      "- UIデザインコンサルティング（コンシューマー向け、ビジネス向け)",
+    "- UI design mock-up creation using Figma":
+      "- Figmaを用いたUIデザインモックアップの作成",
+    "- Interpreting / Translating business English, especially IT domain":
+      "- ビジネス英語（特にIT分野）の通訳・翻訳",
+    "- Consulting / Designing usability research":
+      "- ユーザビリティ調査の設計・コンサルティング",
+    "- Consulting UI Design workshop, and holding online seminars":
+      "- UIデザインワークショップのコンサルティング、オンラインセミナーの開催",
+    "Here are my previous works":
+      "過去の制作物に関してはこちらをご覧ください。",
+    Blogs: "ブログ",
+    Contacts: "お問合せ",
+    "I'm writing about UI design and front-end engineering":
+      "UIデザインやフロントエンド開発について書いています。",
   },
 }

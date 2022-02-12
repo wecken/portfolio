@@ -25,6 +25,7 @@ function About(): React.ReactElement {
     `
     const StyledTypography = styled(Typography)`
       color: #fff;
+      text-transform: none;
     `
     return (
       <StyledButton onClick={() => window.open(url)}>
@@ -36,19 +37,23 @@ function About(): React.ReactElement {
   return (
     <Grid
       container
-      direction={"column"}
+      // direction={"column"}
       alignItems={"center"}
-      justifyContent={"flex-start"}
+      justifyContent={"center"}
     >
-      <CoverImage />
+      <Grid item xs={12}>
+        <CoverImage />
+      </Grid>
       <Grid
-        container
         padding={2}
         item
-        direction={"column"}
-        alignItems={"flex-start"}
-        justifyContent={"flex-start"}
-        style={{ width: "100%" }}
+        alignSelf={"center"}
+        // direction={"column"}
+        // alignItems={"flex-start"}
+        // justifyContent={"flex-start"}
+        // spacing={2}
+        xs={12}
+        md={6}
       >
         <Box mb={4}>
           <Typography variant="h1">{t("About Wecken")}</Typography>
@@ -75,17 +80,56 @@ function About(): React.ReactElement {
               {t("I'm writing about UI design and front-end engineering")}
             </Typography>
           </Box>
-          {SNSButton(
-            "rgb(44, 182, 150)",
-            "Note",
-            "https://twitter.com/hiro_yuki_"
-          )}
-          {SNSButton("#1DA1F2", "Zenn", "https://twitter.com/hiro_yuki_")}
+          {SNSButton("rgb(44, 182, 150)", "Note", "https://note.com/wecken")}
+          {SNSButton("#1DA1F2", "Zenn", "https://zenn.dev/wecken")}
         </Box>
-        <Box mb={4} style={{ width: "100%" }}>
-          <Typography variant="h2">{t("Contacts")}</Typography>
-          {SNSButton("#3ea8ff", "Twitter", "https://twitter.com/hiro_yuki_")}
-          {SNSButton("#0077B5", "LinkedIn", "https://twitter.com/hiro_yuki_")}
+        <Box mb={4}>
+          <Grid container spacing={2}>
+            <Grid item>
+              <Typography variant="h2">{t("Contacts")}</Typography>
+              <Typography variant="body1">
+                {t(
+                  "Wecken is currently working for a company that is offering consumer mobile app, and is also working on several UI design projects on the side project."
+                )}
+                {t(
+                  "Please contact me if you need help with the following types of design work."
+                )}
+              </Typography>
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle2">
+                {t("- Consulting UI design (for consumer and for business)")}
+              </Typography>
+              <Typography variant="subtitle2">
+                {t("- UI design mock-up creation using Figma")}
+              </Typography>
+              <Typography variant="subtitle2">
+                {t("- Consulting / Designing usability research")}
+              </Typography>
+              <Typography variant="subtitle2">
+                {t(
+                  "- Consulting UI Design workshop, and holding online seminars"
+                )}
+              </Typography>
+              <Typography variant="subtitle2">
+                {t(
+                  "- Interpreting / Translating business English, especially IT domain"
+                )}
+              </Typography>
+            </Grid>
+            <Grid item xs={12}>
+              {SNSButton(
+                "#3ea8ff",
+                "Twitter",
+                "https://twitter.com/hiro_yuki_"
+              )}
+              {SNSButton(
+                "#0077B5",
+                "LinkedIn",
+                "https://www.linkedin.com/in/hiroyuki-miura-836b4032/"
+              )}
+            </Grid>
+          </Grid>
         </Box>
       </Grid>
     </Grid>
