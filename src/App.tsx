@@ -38,7 +38,6 @@ const Root = styled.div`
   min-height: 100vh;
   color: ${(props) => props.theme.palette.wecken.black.high};
 `
-
 function App() {
   return (
     <>
