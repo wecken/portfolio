@@ -15,6 +15,9 @@ declare module "@emotion/react" {
           20: string
           10: string
         }
+        white: {
+          high: string
+        }
       }
     }
   }

@@ -2,6 +2,8 @@ import React from "react"
 import MBUX from "assets/images/MBUX.jpg"
 import EOW from "assets/images/EOW_Animation.gif"
 import kurashiruStore from "assets/images/kurashiru_store_banner.jpg"
+import netsuper from "assets/images/kurashiru_net-super_integration.png"
+import kurashiruDelivery from "assets/images/kurashiru_delivery_cover.jpeg"
 import { Box, Grid, Typography } from "@mui/material"
 import MediaCard from "libs/components/molecules/MediaCard"
 import { useTranslation } from "react-i18next"
@@ -21,6 +23,28 @@ function Main(): React.ReactElement {
           alignItems="flex-start"
           gap={3}
         >
+          <Grid item xs={12} sm={3} md={3}>
+            <MediaCard
+              imageSrc={kurashiruDelivery}
+              subtitle="2021"
+              title="Kurashiru Delivery"
+              body={t(
+                "Get delivered from your favorite local supermarket within 30 minuts"
+              )}
+              to="/works/kurashiru_delivery"
+            />
+          </Grid>
+          <Grid item xs={12} sm={3} md={3}>
+            <MediaCard
+              imageSrc={netsuper}
+              subtitle="2020"
+              title="'Netsuper' Integration on Kurashiru App"
+              body={t(
+                "Integrated one of the biggest online grocery store by AEON into Kurashiru, recipe video app, and designed the user experience completely from scratch"
+              )}
+              to="/works/netsuper_integration"
+            />
+          </Grid>
           <Grid item xs={12} sm={3} md={3}>
             <MediaCard
               imageSrc={kurashiruStore}

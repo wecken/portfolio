@@ -34,6 +34,22 @@ function About(): React.ReactElement {
     )
   }
 
+  const StyledCoverContainer = styled.div`
+    position: relative;
+  `
+
+  const StyledCoverText = styled(Typography)`
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    color: ${(props) => props.theme.palette.wecken.white.high};
+  `
+
   return (
     <Grid
       container
@@ -42,21 +58,13 @@ function About(): React.ReactElement {
       justifyContent={"center"}
     >
       <Grid item xs={12}>
-        <CoverImage />
+        <StyledCoverContainer>
+          <CoverImage />
+          <StyledCoverText variant="h1">{t("About Wecken")}</StyledCoverText>
+        </StyledCoverContainer>
       </Grid>
-      <Grid
-        padding={2}
-        item
-        alignSelf={"center"}
-        // direction={"column"}
-        // alignItems={"flex-start"}
-        // justifyContent={"flex-start"}
-        // spacing={2}
-        xs={12}
-        md={6}
-      >
+      <Grid padding={2} item alignSelf={"center"} xs={12} md={6}>
         <Box mb={4}>
-          <Typography variant="h1">{t("About Wecken")}</Typography>
           <Typography variant="body1">
             {t(
               "Wecken is a Japan-based UI/UX designer, good at mobile app UI design with a good understanding of front end engineering. This web site is designed and coded by Wecken"

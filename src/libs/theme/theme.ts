@@ -70,6 +70,9 @@ export const theme = createTheme({
         20: "#E0E0E0",
         10: "#F2F2F2",
       },
+      white: {
+        high: "#ffffff",
+      },
     },
   },
   mixins: {

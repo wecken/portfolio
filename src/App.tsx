@@ -12,6 +12,8 @@ import { JA_JP, EN_US } from "libs/translations"
 import { ThemeProvider } from "libs/theme/ThemeProvider"
 import styled from "@emotion/styled"
 import About from "libs/components/views/about"
+import NetsuperIntegration from "libs/components/views/netsuperIntegration"
+import KurashiruDelivery from "libs/components/views/kurashiruDelivery"
 const resources = {
   ja: JA_JP,
   en: EN_US,
@@ -49,6 +51,14 @@ function App() {
             <Route path="/works/mbux" element={<Mbux />} />
             <Route path="/works/kurashiru_store" element={<KurashiruStore />} />
             <Route path="/works/EOW" element={<EOW />} />
+            <Route
+              path="/works/netsuper_integration"
+              element={<NetsuperIntegration />}
+            />
+            <Route
+              path="/works/kurashiru_delivery"
+              element={<KurashiruDelivery />}
+            />
           </Routes>
         </Root>
       </ThemeProvider>

@@ -13,6 +13,9 @@ declare module "@mui/material/styles/createPalette" {
         20: string
         10: string
       }
+      white: {
+        high: string
+      }
     }
   }
   interface Palette {
@@ -25,6 +28,9 @@ declare module "@mui/material/styles/createPalette" {
         medium: string
         20: string
         10: string
+      }
+      white: {
+        high: string
       }
     }
   }

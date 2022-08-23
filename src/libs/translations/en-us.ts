@@ -53,8 +53,6 @@ export const EN_US = {
       "I didn't just cut features. By reducing unimportant functions, we were able to develop localized functions that we should have focused on. One such feature is flick input.",
     mbux_article_paragraph_05:
       "Flick input was already a very popular text input method for mobile phones in Japan at that time. However, we were only offering old-fashioned 50-key input method that you might see in the very user-unfriendly touch panel system in city office, for example.",
-    mbux_article_paragraph_06:
-      "You can check out how it looks like in action below.",
     eow_article_pargraph_01:
       "Before I redesigned it, there were too many screen transitions making the app feel like inneficient to use. Because the app is famous for the amount of example sentenses, I wanted the app to be more efficient when user is searching for a best suitable result from many of those.",
     eow_article_pargraph_02:
@@ -80,5 +78,25 @@ export const EN_US = {
     Contacts: "Contacts",
     "I'm writing about UI design and front-end engineering":
       "I'm writing about UI design and front-end engineering",
+    short_descripton_netsuper_01:
+      "By integrating the online grocery functionality provided by AEON into the Kurashiru app, we have made it possible for the millions of users of Kurashiru to conduct everything from recipe searches to grocery shopping with a sigle app.",
+    netsuper_article_paragraph_01:
+      "The first challange that is unique to online grocery is that the number of items. There are max 40,000 items listed on one of our partner's online stores. Another thing is that users add much more items to the cart with a single purchase compared to regular ECs like Amazon. On regular ECs, users will purchase 1 or 2 items together, but on online grocery ECs it is common to buy 20 to 40 items in a single cart. In other words, it is very important that the operation from finding the product to adding it to the cart is efficient.",
+    netsuper_article_paragraph_02:
+      "My approach to this challenge was to carefully design the category navigation experience. If you imagine yourself in the supermarket and finding the stuff you need, you should be locating yourself in your mind to find where those can be found.  Or, you will be walking isle by isle to get reminded or inspired of what you wanted to buy.",
+    netsuper_article_paragraph_03:
+      "I designed the categorization and the order of the categories appear on the screen so that the user can have a common experience as they browse products in the real-life supermarkets.",
+    netsuper_article_paragraph_04:
+      "Another interesting features of this project was that user could search for recipes with Kurashiru app, and they could search for the ingredient items on the EC, and they could buy those items and get them delivere to their home.",
+    netsuper_article_paragraph_05:
+      "I designed the UI of this unique use case. Because every person has different taste over the selection of items they regulary buy at the supermarket, the app suggests multiple results each ingredients.",
+    short_descripton_kurashiru_delivery_01:
+      "Kurashiru Delivery was a stand alone native app that offered grocery delivery from their favorite local stores. It supproted iOS and Android with a single source code by React Native technology. It supported part of Minato, Shinagawa, Shibuya, Chuo ward, Tokyo affiliating with franchises supermarkets like Peacock or AEON Style.",
+    kurashiru_delivery_article_paragraph_01:
+      "With the Kurashiru Netsuper project that we launched prior to the Kurashiru Delivery, our app was offering only EC front-end. The rest of the services such as delivery or customer support was completely on our partner's side.",
+    kurashiru_delivery_article_paragraph_02:
+      "However, this time we offered the service that also takes care of the delivery and the customer support. Therefore, I needed to design a back-office tool called the Shopper App. With the shopper app, our affiliated agent called the personal shopper needed to be able to carry out the in-store shopping on behalf of our end-users and complete the delivery process.",
+    kurashiru_delivery_article_paragraph_03:
+      "I designed the overall UI / UX including the Shopper app, EC frontend, and even Admin web app for managing the products we sell on the EC.",
   },
 }

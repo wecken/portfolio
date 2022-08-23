@@ -75,10 +75,7 @@ function Mbux(): React.ReactElement {
       <StyledParagraph variant="body1">
         {t("mbux_article_paragraph_05")}
       </StyledParagraph>
-      <StyledParagraph variant="body1">
-        {t("mbux_article_paragraph_06")}
-      </StyledParagraph>
-      <YoutubeContainer>
+      {/* <YoutubeContainer>
         <StyledIframe
           src="https://www.youtube.com/embed/NRtTMp1cjOo?start=590"
           url="https://www.youtube.com/embed/NRtTMp1cjOo?start=590"
@@ -87,7 +84,7 @@ function Mbux(): React.ReactElement {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen={true}
         ></StyledIframe>
-      </YoutubeContainer>
+      </YoutubeContainer> */}
     </IntroduceWorkArticle>
   )
 }
